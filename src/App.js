@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import Input from './Input';
+import Button from './Button';
+
 
 function App() {
   return (
@@ -17,6 +20,11 @@ function App() {
         >
           Learn React
         </a>
+        <div>
+          <Input />
+          <Button label = 'add task'/>
+        </div>
+
       </header>
     </div>
   );
