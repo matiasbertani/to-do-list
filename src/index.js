@@ -3,16 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals'; 
+import { toDoReducer } from "./reducers";
 
-import { createStore } from 'redux'
+import { applyMiddleware, createStore } from 'redux'
+// import thunk from "redux-thunk" 
+import thunk from "redux-thunk";
+
+import { Provider } from 'react-redux';
 
 
 
+const store = createStore(toDoReducer, applyMiddleware(thunk))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
+    <Provider store = {store}>
+            <App />
+    </Provider>
 
-    <App />
 
 
 );

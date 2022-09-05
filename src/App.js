@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Input from './Input';
-import Button from './Button';
+import ButtonConnected from "./components/ButtonConnected";
+import ShowTextConnected from './components/ShowText Connected';
 
 
 function App() {
@@ -10,19 +11,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>My To Do LIst</code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
         <div>
           <Input />
-          <Button label = 'add task'/>
+          <ButtonConnected label='add task' />
+          <ShowTextConnected/>
         </div>
 
       </header>
