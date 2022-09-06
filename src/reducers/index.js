@@ -1,7 +1,8 @@
 import {ADD_TODO, TOGGLE_TODO, INCREASE_CLICK} from '../actions/index'
 
 const initialState = { 
-    otra : 123,
+    otra: 123,
+    toDos: [],
     clickCount: 0,
 };
 

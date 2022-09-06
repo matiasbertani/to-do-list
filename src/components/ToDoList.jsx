@@ -1,7 +1,7 @@
 import ToDo from "../components/ToDo";
 
 
-const ToDoList = (toDos) => {   
+const ToDoList = ({toDos}) => {   
   
 	const makeToDos = (toDos) => {
 			return toDos.map(
@@ -12,7 +12,7 @@ const ToDoList = (toDos) => {
 
   return (    
     <ul className="row">
-      <p>{taskName}</p>
+      {makeToDos(toDos)}
     </ul>
   );
 

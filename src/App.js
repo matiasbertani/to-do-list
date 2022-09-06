@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Input from './Input';
+import Input from './components/Input';
 import ButtonConnected from "./components/ButtonConnected";
 import ShowTextConnected from './components/ShowText Connected';
+import ToDoList  from "./components/ToDoConnected";
 
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
         <div>
           <Input />
           <ButtonConnected label='add task' />
-          <ShowTextConnected/>
+          <ShowTextConnected />
+          <ToDoList/>
+          
         </div>
 
       </header>

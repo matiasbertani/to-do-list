@@ -2,7 +2,7 @@
 function Input() {
   return (
     <label>Enter your task: 
-        <input type="text" />
+        <input id='input-task' type="text" />
     </label>
   );
 }
